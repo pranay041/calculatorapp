@@ -1,54 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
-</head>
+    <!-- Specifies the document type and version of HTML used -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <!-- Metadata and links to external resources for the document -->
+    <head>
+        <!-- Specifies the character encoding for the HTML document -->
+        <meta charset="UTF-8">
+        
+        <!-- Sets the viewport to ensure the page is responsive on all devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Link to an external CSS file for styling the page -->
+        <link rel="stylesheet" href="./style.css">
+        
+        <!-- Title of the document displayed in the browser tab -->
+        <title>Document</title>
+    </head>
 <body>
 
+<!-- Main container that holds the calculator -->
 <div class="container">
+    <!-- Calculator container -->
     <div class="calculator">
+        <!-- Form element that wraps around the calculator buttons and display -->
         <form >
+            <!-- Display area where input and results are shown -->
             <div class="display">
                 <input type="text" name="display">
             </div>
+            
+            <!-- Row of buttons: AC, DE, ., and / -->
             <div>
+                <!-- 'AC' button clears the display -->
                 <input type="button" value="AC"  onclick="display.value = ''" class="operator">
-                <input type="button" value="DE"  onclick="display.value = display.value.toString().slice(0,-1)"class="operator">
-                <input type="button" value="."  onclick="display.value += '.'"class="operator">
-                <input type="button" value="/"  onclick="display.value += '/'"class="operator">
+                
+                <!-- 'DE' button deletes the last character in the display -->
+                <input type="button" value="DE"  onclick="display.value = display.value.toString().slice(0,-1)" class="operator">
+                
+                <!-- '.' button adds a decimal point to the display -->
+                <input type="button" value="."  onclick="display.value += '.'" class="operator">
+                
+                <!-- '/' button adds a division operator to the display -->
+                <input type="button" value="/"  onclick="display.value += '/'" class="operator">
             </div>
+            
+            <!-- Row of buttons: 7, 8, 9, and * -->
             <div>
+                <!-- '7' button adds the digit 7 to the display -->
                 <input type="button" value="7" onclick="display.value += '7'">
-                <input type="button" value="8" onclick="display.value += '8'" >
+                
+                <!-- '8' button adds the digit 8 to the display -->
+                <input type="button" value="8" onclick="display.value += '8'">
+                
+                <!-- '9' button adds the digit 9 to the display -->
                 <input type="button" value="9"  onclick="display.value += '9'">
+                
+                <!-- '*' button adds a multiplication operator to the display -->
                 <input type="button" value="*"  onclick="display.value += '*'" class="operator">
             </div>
-             <div>
+            
+            <!-- Row of buttons: 4, 5, 6, and - -->
+            <div>
+                <!-- '4' button adds the digit 4 to the display -->
                 <input type="button" value="4" onclick="display.value += '4'">
+                
+                <!-- '5' button adds the digit 5 to the display -->
                 <input type="button" value="5" onclick="display.value += '5'">
+                
+                <!-- '6' button adds the digit 6 to the display -->
                 <input type="button" value="6" onclick="display.value += '6'">
+                
+                <!-- '-' button adds a subtraction operator to the display -->
                 <input type="button" value="-" onclick="display.value += '-'" class="operator">
             </div>
-             <div>
+            
+            <!-- Row of buttons: 1, 2, 3, and + -->
+            <div>
+                <!-- '1' button adds the digit 1 to the display -->
                 <input type="button" value="1" onclick="display.value += '1'">
+                
+                <!-- '2' button adds the digit 2 to the display -->
                 <input type="button" value="2" onclick="display.value += '2'">
+                
+                <!-- '3' button adds the digit 3 to the display -->
                 <input type="button" value="3" onclick="display.value += '3'">
+                
+                <!-- '+' button adds an addition operator to the display -->
                 <input type="button" value="+" onclick="display.value += '+'" class="operator">
             </div>
-               <div>
+            
+            <!-- Row of buttons: 00, 0, and = -->
+            <div>
+                <!-- '00' button adds double zeros to the display -->
                 <input type="button" value="00" onclick="display.value += '00'">
+                
+                <!-- '0' button adds a zero to the display -->
                 <input type="button" value="0" onclick="display.value += '0'">
+                
+                <!-- '=' button evaluates the expression in the display and shows the result -->
                 <input type="button" value="=" class="equal operator"  onclick="display.value = eval(display.value)">
-               
             </div>
         </form>
     </div>
 </div>
 
-    
-    
 </body>
 </html>
