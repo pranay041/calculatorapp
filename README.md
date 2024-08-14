@@ -9,11 +9,15 @@ A simple, responsive calculator built using HTML, CSS, and JavaScript. The desig
 - **Interactive UI**: Buttons with a 3D shadow effect for a tactile experience.
 - **Real-time Display**: Displays input and results in real-time.
 
+## Demo
+
+Check out the live demo: [Calculator App Demo](https://pranay041.github.io/calculatorapp/)
+
 ## Installation
 
 1. **Clone the Repository**
     ```bash
-    git clone [https://github.com/pranay041/calculatorapp.git](https://github.com/pranay041/calculatorapp.git)
+    git clone https://github.com/pranay041/calculatorapp.git
     ```
 2. **Navigate to the Project Directory**
     ```bash
@@ -48,11 +52,6 @@ A simple, responsive calculator built using HTML, CSS, and JavaScript. The desig
 
 Feel free to fork this project, submit pull requests, or create issues if you have ideas for improvements.
 
-
-
 ## Acknowledgements
 
 - Icons and fonts used in the design are from Google Fonts and FontAwesome.
-
-
-
